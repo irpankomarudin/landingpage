@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: landing
-        image: elqahtani/landing-page
+        image: irpank/landingpage-app
         ports:
         - containerPort: 80
         imagePullPolicy: "Always"
@@ -40,7 +40,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: landing.belajarlinux.web.id
+  - host: landing.komarudins.online
     http:
       paths:
       #- path: /
